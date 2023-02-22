@@ -7,6 +7,15 @@
     <title>Discord</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css" media="screen and (max-width:500px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+        
+        
+        
+    </style>
+
 </head>
 <body>
     <div class="header">
@@ -15,7 +24,7 @@
                 <a href="#" class="logo"><img src="dis.png" alt="" ></a>
 
             </div>
-            <div class="middle">
+            <div class="middle" id="myTopnav">
                 <a href="#">Download</a>
                 <a href="#">Nitro</a>
                 <a href="#">Discover</a>
@@ -23,9 +32,12 @@
                 <a href="#">Support</a>
                 <a href="#">Blog</a>
                 <a href="#">Careers</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
 
             </div>
-
+            
             <div class="right">
                 <button class="login">Login</button>
             </div>
@@ -75,11 +87,11 @@
         <img src="section-4.svg" alt="" class="section4">
         <div class="sparkle"><img src="sparkles.svg"> </div>
         <h1 class="ready">Ready to start your journey?</h1>
-        <button class="download"><img src="downloadicon.png" width="18px" height="18px" > Download for Windows</button>
+        <button class="download" id="newbutton" onclick="news()"><img src="downloadicon.png" width="18px" height="18px" > Download for Windows</button>
     </div>
 
     <div class="footer">
-        <div>
+        <div class="foot1">
             <h1 class="footh">IMAGINE A <br> PLACE</h1>
             <!-- <p class="footp"><img src="flag.png" alt="">English, USA <img src="dropdown.png" width="2px"></p> -->
             <div class="country">
@@ -92,22 +104,22 @@
             </div>
         </div>
 
-        <div>
-            <a href="#" class="footrow">Product</a>
+        <div class="rows">
+            <a href="#" class="footrow" >Product</a>
             <a href="#">Download</a>
             <a href="#">Nitro</a>
             <a href="#">Status</a>
         </div>
 
-        <div>
-          <a href="" class="footrow">Company</a>
+        <div class="rows">
+          <a href="" class="footrow" >Company</a>
           <a href="">About</a>
           <a href="">Jobs</a>
           <a href="">Branding</a>
           <a href="">Newsroom</a>
         </div>
 
-        <div>
+        <div class="rows">
             <a href="" class="footrow">Resources</a>
             <a href="">College</a>
             <a href="">Support</a>
@@ -120,7 +132,7 @@
             <a href="">Community</a>
         </div>
 
-        <div>
+        <div class="rows">
             <a href="" class="footrow">Polices</a>
             <a href="">Terms</a>
             <a href="">Privacy</a>
@@ -142,7 +154,18 @@
         </div>
     </div>
 
-    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "middle") {
+            x.className += " responsive";
+          } else {
+            x.className = "middle";
+          }
+
+        }
+        
+    </script>
 
     
 </body>
