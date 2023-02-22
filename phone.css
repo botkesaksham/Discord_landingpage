@@ -1,0 +1,152 @@
+body{
+    width: 100%;
+}
+
+.header{
+    height: 75vh;
+}
+
+.nav{
+    align-items: flex-start;
+    flex-direction: row;
+    padding-top: 2rem;
+}
+.left{
+    justify-content: flex-start;
+    margin-left: 0rem;
+    width: 0rem;
+    margin-right: 14rem;
+}
+
+.icon{
+    float: right;
+}
+
+.nav .middle{
+    width: 28px;
+    margin-top: 0px;
+    flex-direction: column;
+}
+
+.logo img{
+    margin-right: 8rem;
+    margin-left: 2rem;
+}
+
+.middle{
+    background-color: rgb(40, 40, 40);
+}
+.middle a {
+    display: none;
+
+}
+
+.middle a.icon {
+    float: right;
+    display: block;
+    font-size: 2rem;
+    width: 2rem;
+    background-color: #4747fd;
+}
+
+  
+.middle.responsive {
+    position: relative;
+    padding: 1rem 1rem ;
+    margin-right: 0.5rem;
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+}
+
+.middle.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.middle.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+}
+
+.open, .login{
+    display: none;
+}
+
+.headings p{
+    font-size: 1rem;
+}
+
+.header .headings{
+    text-align: left;
+    width: 90%;
+}
+
+.header .headings .bigheading{
+    font-size: 1.7rem;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.first, .second, .third{
+    padding: 1rem 1rem;
+}
+
+.second{
+    flex-wrap: wrap-reverse;
+}
+.main img{
+    height: 20rem;
+    width: 21rem;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+.reliable p{
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.7rem;
+}
+
+.reliable{
+    width: 20rem;
+}
+
+.secondlastheading{
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.sparkle img{
+    width: 22rem;
+    height: 2rem;
+}
+
+.section4{
+    margin-top: 2rem;
+}
+
+.rowblue{
+    width: 20rem;
+}
+
+.foot1{
+    width: 20rem;
+}
+
+.footer{
+    flex-direction: column;
+    align-content: center;
+}
+
+.rows{
+    padding-top: 1rem;
+}
