@@ -43,6 +43,9 @@ body{
     justify-content: space-around;
     flex-direction: row;
     width: 40rem;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 2rem;
 
 }
 
@@ -75,6 +78,9 @@ body{
     color: white;
     font-weight: 800;
 }
+
+/* --------------------new nav------------------------ */
+
 /* ----------------------download buttons------------------------------- */
 
 .download, .open{
@@ -101,12 +107,22 @@ body{
 
 .download:hover, .login:hover{
     color: rgb(78, 78, 231);
+    cursor: pointer;
+}
+
+.middle .icon {
+    display: none;
+  }
+
+.middle {
+    overflow: hidden;
 }
 
 /* ------------------------main section--------------------------- */
 
 .first, .second, .third{
     display: flex;
+    flex-wrap: wrap;
     padding: 4rem 4rem;
 
 }
@@ -215,6 +231,7 @@ p{
 .footer{
     padding-top: 4rem;
     display: flex;
+    flex-wrap: wrap;
     background-color: #23272a;
     justify-content: space-evenly;
     padding-bottom: 2rem;
