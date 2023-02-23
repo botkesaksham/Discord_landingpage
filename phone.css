@@ -96,6 +96,7 @@ body{
 
 .first, .second, .third{
     padding: 1rem 1rem;
+    flex-wrap: wrap;
 }
 
 .second{
